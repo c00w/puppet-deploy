@@ -12,7 +12,7 @@ class deploy ($repo) {
 
     vcsrepo {"/home/deploy/Observatory":
         source  => $repo,
-        require => User["deploy"]
+        require => User["deploy"],
         ensure  => "present",
     }
 

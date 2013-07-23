@@ -1,5 +1,8 @@
 class deploy ($repo) {
 
+    package {"git":
+        ensure  => latest,
+    }
 
     user {"deploy":
         ensure  => present,
@@ -12,9 +15,12 @@ class deploy ($repo) {
 
     vcsrepo {"/home/deploy/Observatory":
         source  => $repo,
-        require => User["deploy"],
         ensure  => "present",
         provider=> "git",
+        require => [
+            User["deploy"],
+            Package["git"]
+        ]
     }
 
     ssh_authorized_key {"Colin_Rice_16384_rsa_deploy":

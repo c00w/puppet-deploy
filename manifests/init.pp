@@ -14,6 +14,7 @@ class deploy ($repo) {
         source  => $repo,
         require => User["deploy"],
         ensure  => "present",
+        provider=> "git",
     }
 
     ssh_authorized_key {"Colin_Rice_16384_rsa_deploy":

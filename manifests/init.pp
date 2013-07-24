@@ -9,7 +9,7 @@ class deploy ($repo) {
         home    => "/home/deploy",
         managehome  => true,
         groups  => ["sudo"],
-        password => '$6$kKj2t2Zb$w7NWbmhguJQaw5TpFAf0UZoNkDyx8G5l3M7HPV5RqO1PseDmo627ZhjiDjspcmY6ME5F3JXtxjipk/8E4G4DF0',
+        password => '$6$EKOc5Usk$EpV7UpJolBJCbDT0BC0aVqTZl0e96c2PIU7mr5qyRrsYB8O1JOEyc2X/JNzY2Gjo35jRQWPai6FOe0s2RiRhG0',
         shell   => "/bin/bash"
     }
 

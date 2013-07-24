@@ -8,7 +8,7 @@ class deploy ($repo) {
         ensure  => present,
         home    => "/home/deploy",
         managehome  => true,
-        groups  => ["admin"],
+        groups  => ["sudo"],
         password => "$6$kKj2t2Zb$w7NWbmhguJQaw5TpFAf0UZoNkDyx8G5l3M7HPV5RqO1PseDmo627ZhjiDjspcmY6ME5F3JXtxjipk/8E4G4DF0",
         shell   => "/bin/bash"
     }

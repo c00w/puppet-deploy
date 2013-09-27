@@ -23,11 +23,11 @@ class deploy ($repo) {
         ]
     }
 
-    ssh_authorized_key {"Moorthy_dsa_deploy":
+    ssh_authorized_key {"Moorthy_rsa_deploy":
         ensure  => present,
         user    => "deploy",
-        type    => "ssh-dss",
-        key     => 'AAAAB3NzaC1kc3MAAACBAMfOCvvCfWDGLwpYQeyhJfeSo2S9AijNNTHb6/md00bQmVYefsMjzNbTK2H9XDdGTlGYtOeBy+FVp0OWI2gKpYL4+HCWPt+IAfCza62zf0AKWac2WgZ/4udNnn+dvPtn607zcnGOi6t8lj8TqU8pLt5nLleqA43Z92XSJTVeUg3ZAAAAFQC7wTeJ59+8ACkJhbgImuIOk7l/QQAAAIEAtK2OBJ4EjWEYNCfR7rybNcxG4f4GuqHLuyZD0tIjxm3b7ZfwGciMtXtCBoXCZy8JQE4hgT4fCBcMGnZaNul/jCKAx39EU6R7HNBd3inmimt4O91dndrk0ldmWj9gasv9t5jVCGAKpReER5X8S7LBUiQSHRkPg+wHkFZCV66r4HgAAACAD2a97dU0Zjesqhie6tspc1YcLrsqs4dlXKYz+E5RJKOzePvob90CLouCsMTG+2w8GBmekC1P7QDUMTri14IGEo0/xVjM2V4qjKxN0F6J046HMTtjLIcynILsZZfjtOMkKMGKJWeTHclhR+CNZ9PZOfH471uufM1+1EYl3O/Zhuw='
+        type    => "ssh-rsa",
+        key     => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDGQsLXTsgnU7pRwOX1Nwl3UtlZ69QweUcYF0Pf0RKBXimueo6LcYbQ8wRnRSO2B+VV7ttCu8FuRLrLYZi0ipk9viw/+6DR4XphJIbW4cD26ahpFIZ2b7RmUqOtrqFqUgeutYkLmNRLk6/Hi2RgiRCJ5D5UJwwpVjBsHvC6Q5V+wAicg74RlWmIveJxQPb6L+kP3hCNzqNxBLpQdwvWMZojT9zWbZt3obDodHQs3t3JDeFPj1gAlP/25g8cCgg/mHohSplB3WS4SAXrGWrwQUirbKi64KzcNrRe+4dR8GDUeyiuDADxYrFqVVuNkwbaPpsM83CMZmE46sXwg+Nz8Z65'
     }
 
     ssh_authorized_key {"Colin_Rice_16384_rsa_deploy":
